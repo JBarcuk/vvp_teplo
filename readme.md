@@ -16,10 +16,10 @@ Teplotu v každé podoblasti budeme reprezentovat pomocí hodnoty teploty ve st�
 
 Změny teplot jsou zadány vztahem: 
 
-$
+$`
 u\left(x,y,t+dt\right)\approx u\left(x,y,t\right)+\frac{2}{\rho\left(x,y\right)c\left(x,y\right)}dt\left(\frac{u\left(x-dx,y,t\right)-u\left(x,y,t\right)}{\left(\frac{1}{\lambda\left(x,y\right)}+\frac{1}{\lambda\left(x-dx,y\right)}\right)dx^{2}}+
 \frac{u\left(x,y-dy,t\right)-u\left(x,y,t\right)}{\left(\frac{1}{\lambda\left(x,y\right)}+\frac{1}{\lambda\left(x,y-dy\right)}\right)dy^{2}}+\frac{u\left(x+dx,y,t\right)-u\left(x,y,t\right)}{\left(\frac{1}{\lambda\left(x,y\right)}+\frac{1}{\lambda\left(x+dx,y\right)}\right)dx^{2}}+\frac{u\left(x,y+dy,t\right)-u\left(x,y,t\right)}{\left(\frac{1}{\lambda\left(x,y\right)}+\frac{1}{\lambda\left(x,y+dy\right)}\right)dy^{2}}\right),
-$
+`$
 
 kde $\lambda$ je součinitel tepelné vodivosti, $\rho$ je hustota a $c$ je měrná tepelná kapacita. Parametry $\lambda$, $\rho$ a $c$ budou zadány na vstupu jako matice o stejných rozměrech jako je diskretizace oblasti. $\rho$ a $c$ se vyskytují vždy pohromadě, proto budou na vstupu dohromady. Dalším vstupem bude také počáteční teplota v každé podoblasti.
 
